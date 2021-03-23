@@ -1,0 +1,68 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+}
+
+h1, h2, p {
+  margin-top: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  width: 40%;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+section {
+  width: 40%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+h2 {
+  font-size: 24px;
+  color: #ef5839;
+}
+
+img {
+  width: 98%;
+  object-fit: cover;
+}
+
+a {
+  display: inline-block;
+  padding: 18px 55px;
+  font-weight: 700;
+  text-decoration: none;
+}
+ a:hover, a:focus {
+  text-decoration: underline;
+  backdrop-filter: blur(10px);
+ }
+
+.container-section-two, .container-h1 {
+  background-color: #2e354f;
+}
+
+.container-section-one {
+  background-color: #fff;
+}
+
+.section-one {
+  color: black;
+}
+
+.contact-us-btn {
+ background-color: #ef5839;
+ color: #fff;
+}
+
+.more-info-btn {
+  background-color: #fff;
+  color: black;
+}
+
