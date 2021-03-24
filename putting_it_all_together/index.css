@@ -1,7 +1,9 @@
-body {
+html {
+  font-size: 12px;
+} 
+ 
+ body {
   font-family: 'Lato', sans-serif;
-  font-size: 18px;
-  color: #fff;
   margin: 0;
 }
 
@@ -9,23 +11,68 @@ h1, h2, p {
   margin-top: 0;
 }
 
+/* Typography */
+
 h1 {
   text-align: center;
-  font-size: 36px;
-  width: 40%;
-  padding: 40px 0;
-  margin: 0 auto;
-}
-
-section {
-  width: 40%;
-  margin: 0 auto;
-  padding: 40px 0;
+  font-size: 3rem;
+  color: #fff;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 2rem;
   color: #ef5839;
+}
+
+p, ul, a {
+  font-size: 1.6rem;
+}
+
+li {
+  font-size: 1.5rem;
+}
+
+a {
+  font-weight: 700;
+  text-decoration: none;
+}
+ a:hover, a:focus {
+  text-decoration: underline;
+ }
+
+/* Buttons */
+
+ .btn {
+  display: inline-block;
+  padding: 18px 55px;
+ }
+
+ .contact-us-btn {
+  background: #ef5839;
+  color: #fff;
+ }
+ 
+ .more-info-btn {
+   background: #fff;
+   color: black;
+ }
+
+ /* Layout */
+
+ header {
+  background: #2e354f;
+}
+
+.container {
+  width: 40%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.section-two {
+  color: white;
+  background: #2e354f;
 }
 
 img {
@@ -33,36 +80,5 @@ img {
   object-fit: cover;
 }
 
-a {
-  display: inline-block;
-  padding: 18px 55px;
-  font-weight: 700;
-  text-decoration: none;
-}
- a:hover, a:focus {
-  text-decoration: underline;
-  backdrop-filter: blur(10px);
- }
 
-.container-section-two, .container-h1 {
-  background-color: #2e354f;
-}
-
-.container-section-one {
-  background-color: #fff;
-}
-
-.section-one {
-  color: black;
-}
-
-.contact-us-btn {
- background-color: #ef5839;
- color: #fff;
-}
-
-.more-info-btn {
-  background-color: #fff;
-  color: black;
-}
 
