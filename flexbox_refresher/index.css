@@ -48,6 +48,7 @@ h1 > span {
 .rows {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin: 1em 0;
 }
 
@@ -66,7 +67,8 @@ width: 20%;
 .last-col {
   width: 20%;
   background: #312614;
-  padding: 1em 1em 0 1em;
+  padding: .5em .5em 0 .5em;
+  box-sizing: content-box;
 }
 
 .big-col {
