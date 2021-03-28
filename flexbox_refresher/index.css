@@ -84,3 +84,14 @@ img {
   margin: 0 auto 2em auto;
   padding: .5em;
 }
+
+@media (max-width: 650px) {
+  .rows {
+    flex-direction: column;
+    align-items: center;;
+  }
+
+  .first-col, .middle-col, .last-col {
+    width: 80%;
+  }
+}
