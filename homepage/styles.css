@@ -8,6 +8,7 @@ body {
   font-size: 1.32rem;
   font-weight: 300;
   color: #707070;
+  line-height: 1.7;
 }
 
 img {
@@ -75,7 +76,7 @@ span {
 
 .article-body {
   font-size: 1.32rem;
-  line-height: 1.5em;
+  line-height: 1.6;
 }
 
 .article-read-more {
@@ -108,7 +109,7 @@ span {
 .footer-title,
 .footer-copyright {
   text-align: center;
-  color: #f8f8f8;
+  color: rgba(248, 248, 248, .9);
 }
 
 .footer-title {
