@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #404040;
+  text-align: center;
+}
+
+/* ===============
+Typography
+=================*/
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+ font-size: 2.25rem;
+ font-weight: 300;
+ color: #fff;
+}
+
+h1 + p {
+  color: #f18119;
+  font-weight: 900;
+  font-size: 1.3125;
+  text-transform: uppercase;
+}
+
+.top-text {
+  color: #f18119;
+  font-weight: 900;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-top: 5px solid #f18119; 
+  order: -1;
+}
+
+h2 {
+  font-size: 1.3125rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+h2 + p {
+  color: #f18119;
+  font-weight: 900; 
+}
+
+.disclaimer-text {
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+}
+
+strong {
+  font-weight: 900;
+}
+
+/* ===============
+Intro
+=================*/
+
+.intro {
+
+}
+
+.bg-image {
+  background-image: url(bbq_spareribs.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(51, 44, 44, .7);
+  background-blend-mode: overlay;
+  filter: blur(3px);
+  width: 100%;
+  max-width: 100%;
+  height: 50vh;
+}
+
+.intro-content {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  height: 50vh;
+  box-sizing: border-box;
+  padding: 0 .25em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
