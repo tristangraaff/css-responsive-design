@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-size: 1rem;
@@ -20,6 +24,7 @@ h1 {
  font-size: 2.25rem;
  font-weight: 300;
  color: #fff;
+ margin: 2.6em 0;
 }
 
 h1 + p {
@@ -68,10 +73,12 @@ Intro
 =================*/
 
 .intro {
-  height: 50vh;
+  min-height: 50vh;
+  position: relative;
 }
 
 .bg-image {
+  position: absolute;
   background-image: url(bbq_spareribs.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -81,23 +88,19 @@ Intro
   filter: blur(3px);
   width: 100%;
   max-width: 100%;
-  height: 50vh;
+  min-height: 100%;
+  z-index: -1;
 }
 
 .intro-content {
   width: 100%;
   max-width: 100%;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  height: 50vh;
-  box-sizing: border-box;
   padding: 0 .5em 2em;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ===============
@@ -106,14 +109,55 @@ Main content
 
 .main-content {
   padding: 2em 1em;
-  box-sizing: border-box;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===============
+Form
+=================*/
+
+.email-collector {
+  width: 80%;
+  max-width: 300px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 3px solid black; */
+}
+
+input,
+.btn {
+  padding: .25em 0;
+  width: 100%;
+  text-align: inherit;
+  margin-bottom: .75em;
+  border-radius: 4px;
+  border: 1px solid #404040;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+input {
+  
+}
+
+.btn {
+ 
+}
+
+.disclaimer-text {
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ===============
 Media queries
 =================*/
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   body {
     font-size: 1.125rem;
     display: flex;
@@ -121,7 +165,7 @@ Media queries
 
   h1 {
     font-size: 3.5rem;
-    margin: 4em 0 0;
+    margin: 4.3em 0 0;
   }
 
   h2,
@@ -131,34 +175,42 @@ Media queries
 
   .intro {
     width: 50%;
+    height: auto;
     min-height: 100vh;
-    position: relative;
   }
 
   .bg-image {
+    background-image: url(bbq_spareribs.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(51, 44, 44, .7);
+    background-blend-mode: overlay;
+    filter: blur(3px);
     width: 100%;
     max-width: 100%;
-    min-height: 100vh;
+    height: auto;
+    min-height: 100%;         
+    position:absolute;        
+    z-index:-1;              
   }
 
   .intro-content {
     width: 100%;
-    max-width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    max-width: 450px;
     z-index: 2;
-    min-height: 100vh;
-    box-sizing: border-box;
+    height: auto;
     padding: 0 .5em 2em;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
   }
 
   .main-content {
+    padding: 2em 1em;
     width: 50%;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
